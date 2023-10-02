@@ -32,7 +32,7 @@ jobs:
     name: Update experimental features json
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: '0'
       - name: Create experimental features file
@@ -83,7 +83,7 @@ jobs:
     needs: create-expjson
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: '0'
       - name: Download artifacts
